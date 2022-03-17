@@ -6,7 +6,7 @@ const admin = require("firebase-admin");
 // 3. Store the JSON file in the `functions/resources/` directory
 
 const serviceAccount =
-require("../resources/flirty-amore-dev-firebase-adminsdk-zdt3a-667bcae759.json");
+require("../resources/firebase-key.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
